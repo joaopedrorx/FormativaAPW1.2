@@ -1,0 +1,165 @@
+@charset "UTF-8";
+:root {
+    --cor-primaria: #2c3e50;
+    --cor-secundaria: #3498db;
+    --cor-texto: #333;
+    --cor-fundo: #f9f9f9;
+    --cor-borda: #ddd;
+    --fonte-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.cabecalho {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--cor-borda);
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--cor-secundaria);
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: var(--cor-primaria);
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    color: var(--cor-secundaria);
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.secao {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: var(--cor-primaria);
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+h3 {
+    color: var(--cor-secundaria);
+    margin-bottom: 5px;
+}
+
+.lista-competencia {
+    list-style-type: none;
+}
+
+.lista-competencia li {
+    padding: 8px 0;
+    border-bottom: 1px dotted var(--cor-borda);
+}
+
+.lista-competencia li:last-child {
+    border-bottom: none;
+}
+
+.formacao-item {
+    margin-bottom: 20px;
+}
+
+.formacao-item p {
+    margin-left: 20px;
+    font-style: italic;
+}
+
+a {
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.rodape {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid var(--cor-borda);
+}
+
+.icone-contato {
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilos específicos para a página de experiência */
+.botao-voltar {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    background-color: var(--cor-primaria);
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.botao-voltar:hover {
+    background-color: var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.experiencia-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed var(--cor-borda);
+}
+
+.experiencia-item:last-child {
+    border-bottom: none;
+}
+
+.empresa {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--cor-primaria);
+}
+
+.experiencia-item ul {
+    margin-left: 20px;
+}
+
+.experiencia-item li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .secao {
+        padding: 15px;
+    }
+}
