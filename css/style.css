@@ -15,6 +15,7 @@
 }
 
 body {
+    max-width: 1000px;
     font-family: var(--fonte-principal);
     color: var(--cor-texto);
     background-color: var(--cor-fundo);
