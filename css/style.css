@@ -1,7 +1,7 @@
 @charset "UTF-8";
 :root {
     --cor-primaria: #000000;
-    --cor-secundaria: #80ff00;
+    --cor-secundaria: #171b9d;
     --cor-texto: #212121;
     --cor-fundo: #f9f2dc;
     --cor-borda: #ddd;
@@ -94,7 +94,7 @@ h3 {
 }
 
 a {
-    color: var(--cor-texto);
+    color: var(--cor-secundaria);
     text-decoration: none;
 }
 
